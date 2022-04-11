@@ -94,6 +94,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="youcanpay.html#getpaymenturl" class="tsd-kind-icon">get<wbr>Payment<wbr>Url</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="youcanpay.html#gettoken" class="tsd-kind-icon">get<wbr>Token</a></li>
 							</ul>
 						</section>
@@ -112,7 +113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/ce2526b/src/lib/YouCanPay.ts#L8">src/lib/YouCanPay.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/cc7dedc/src/lib/YouCanPay.ts#L10">src/lib/YouCanPay.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -137,7 +138,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Sand<wbr>Box<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/ce2526b/src/lib/YouCanPay.ts#L8">src/lib/YouCanPay.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/cc7dedc/src/lib/YouCanPay.ts#L10">src/lib/YouCanPay.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,13 +148,39 @@
 					<div class="tsd-signature tsd-kind-icon">private<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/ce2526b/src/lib/YouCanPay.ts#L7">src/lib/YouCanPay.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/cc7dedc/src/lib/YouCanPay.ts#L9">src/lib/YouCanPay.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getpaymenturl" class="tsd-anchor"></a>
+					<h3>get<wbr>Payment<wbr>Url</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Payment<wbr>Url<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="tokeninput.html" class="tsd-signature-type">TokenInput</a>, lang<span class="tsd-signature-symbol">: </span><a href="../enums/lang.html" class="tsd-signature-type">Lang</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/cc7dedc/src/lib/YouCanPay.ts#L29">src/lib/YouCanPay.ts:29</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>data: <a href="tokeninput.html" class="tsd-signature-type">TokenInput</a></h5>
+								</li>
+								<li>
+									<h5>lang: <a href="../enums/lang.html" class="tsd-signature-type">Lang</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="gettoken" class="tsd-anchor"></a>
 					<h3>get<wbr>Token</h3>
@@ -164,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/ce2526b/src/lib/YouCanPay.ts#L14">src/lib/YouCanPay.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/lynvi/youcan-payment-nodejs-sdk/blob/cc7dedc/src/lib/YouCanPay.ts#L16">src/lib/YouCanPay.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,6 +218,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
 						<a href="../enums/currencycode.html" class="tsd-kind-icon">Currency<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/lang.html" class="tsd-kind-icon">Lang</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="axiosadapter.html" class="tsd-kind-icon">Axios<wbr>Adapter</a>
@@ -223,6 +253,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="youcanpay.html#privatekey" class="tsd-kind-icon">private<wbr>Key</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="youcanpay.html#getpaymenturl" class="tsd-kind-icon">get<wbr>Payment<wbr>Url</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="youcanpay.html#gettoken" class="tsd-kind-icon">get<wbr>Token</a>
