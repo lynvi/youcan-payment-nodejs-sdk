@@ -1,6 +1,6 @@
 {
   "name": "youcan-payment-nodejs-sdk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This package allows the developer to interact easily with the YouCan Pay API.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
