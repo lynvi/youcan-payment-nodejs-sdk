@@ -2,10 +2,11 @@
 
 This package allows the developer to interact easily with the YouCan Pay API.
 
-<p align="center"><a href="https://youcanpay.com" target="_blank"><img src="https://youcanpay.com/images/ycpay-logo.svg" width="400"></a></p>
+<p align="center"><a href="https://youcanpay.com" target="_blank"><img style="margin-right:30px" src="https://youcanpay.com/images/ycpay-logo.svg" width="300"><img
+height="150"  src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" /></a></p>
 
 <p align="center">
-   <a href="https://www.npmjs.com/package/youcan-payment-nodejs-sdk"><img src="https://img.shields.io/npm/v/youcan-payment-nodejs-sdk.svg?style=flat-square&colorB=51C838"  
+   <a href="https://www.npmjs.com/package/youcan-payment-nodejs-sdk"><img src="https://img.shields.io/npm/v/youcan-payment-nodejs-sdk.svg"  
                                                        alt="NPM Version"></a>
    <a href="https://codecov.io/gh/iamkun/dayjs"><img
             src="https://img.shields.io/codecov/c/github/iamkun/dayjs/master.svg?style=flat-square" alt="Codecov"></a>
