@@ -1,3 +1,5 @@
+import { BASE_URL } from './api/constants';
+import { Lang } from './api/enums/lang.enum';
 import { AxiosAdapter } from './api/http/AxiosAdapter';
 import { IToken } from './api/interfaces/global';
 import { TokenEndpoint } from './api/services/TokenEndpoint';
@@ -22,5 +24,22 @@ export class YouCanPay {
     );
 
     return await tokenEndpoint.call();
+  }
+
+  public async getPaymentUrl(data: TokenInput, lang: Lang): Promise<string> {
+    const payload = { ...data, pri_key: this.privateKey };
+    const axiosAdapter = new AxiosAdapter();
+
+    const tokenEndpoint = new TokenEndpoint(
+      this.isSandBoxMode,
+      axiosAdapter,
+      payload
+    );
+
+    const token = await tokenEndpoint.call();
+
+    return `${BASE_URL}${this.isSandBoxMode ? 'sandbox/' : ''}payment-form/${
+      token.id
+    }?lang=${lang}`;
   }
 }
