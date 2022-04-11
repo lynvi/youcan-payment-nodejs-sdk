@@ -1,4 +1,5 @@
 import { CurrencyCode } from '../api/enums/currency.enum';
+
 import { Customer } from './Customer';
 
 export class TokenInput {

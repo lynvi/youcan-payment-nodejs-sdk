@@ -5,7 +5,7 @@ import { TokenInput } from './models/Token';
 
 export class YouCanPay {
   private privateKey: string;
-  private isSandBoxMode: boolean = false;
+  private isSandBoxMode = false;
   constructor(privateKey: string, isSandBoxMode: boolean) {
     this.privateKey = privateKey;
     this.isSandBoxMode = isSandBoxMode;

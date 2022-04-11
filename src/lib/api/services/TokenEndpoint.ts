@@ -1,6 +1,7 @@
 import { TokenInput } from '../../models/Token';
 import { InvalidResponseError } from '../exceptions/InvalidResponseException';
 import { HTTPAdapter } from '../interfaces/global';
+
 import { Endpoint } from './Endpoint';
 
 export class TokenEndpoint extends Endpoint {
