@@ -22,7 +22,7 @@ you have the choice to do one integration or both integrations in your checkout 
 
 Instructions for adding the YouCan Pay SDK to your NodeJS Applications.
 
-###Quick start
+### Quick start
 
 ```shell
 yarn add youcan-payment-nodejs-sdk
@@ -55,7 +55,7 @@ const token = await youCanPayment.getToken({
 conssole.log(token.id); // 71d8c27-2416-41ee-b750-d6382f72a565
 ```
 
-###YouCan Pay: Standalone Integration
+### YouCan Pay: Standalone Integration
 
 ```typescript
 const youCanPayment = new YouCanPay(
