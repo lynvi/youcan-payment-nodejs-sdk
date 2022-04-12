@@ -53,7 +53,7 @@ const token = await youCanPayment.getToken({
   }, //optional
 });
 
-conssole.log(token.id); // 71d8c27-2416-41ee-b750-d6382f72a565
+console.log(token.id); // 71d8c27-2416-41ee-b750-d6382f72a565
 ```
 
 ### YouCan Pay: Standalone Integration
