@@ -1,6 +1,6 @@
 # youcan-payment-nodejs-sdk
 
-This package allows the developer to interact easily with the YouCan Pay API.
+This package allows the developer to interact easily with the YouCan Pay API. (this package is in early development)
 
 <p align="center"><a href="https://youcanpay.com" target="_blank"><img style="margin-right:30px" src="https://youcanpay.com/images/ycpay-logo.svg" width="300"><img
 height="150"  src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" /></a></p>
