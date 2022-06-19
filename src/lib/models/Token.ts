@@ -9,5 +9,5 @@ export class TokenInput {
   customer_ip: string;
   success_url: string;
   error_url?: string;
-  customerInfo?: Customer;
+  customer?: Customer;
 }
