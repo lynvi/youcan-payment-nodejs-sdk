@@ -41,7 +41,7 @@ const token = await youCanPayment.getToken({
   order_id: 'XXXXXX', //required
   success_url: 'https://yourdomain.com/orders-status/success', //required
   error_url: 'https://yourdomain.com/orders-status/error', //optional
-  customerInfo: {
+  customer: {
     name: '',
     address: '',
     zip_code: '',
