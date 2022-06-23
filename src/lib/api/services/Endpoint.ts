@@ -7,6 +7,8 @@ export class Endpoint {
   }
 
   public getBaseUrl(): string {
-    return `${BASE_URL}${this.isSandboxMode ? 'sandbox/api/' : 'api/'}`;
+    return `${BASE_URL}${
+      this.isSandboxMode?.toString() === 'false' ? 'api/' : 'sandbox/api/'
+    }`;
   }
 }
