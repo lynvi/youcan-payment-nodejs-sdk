@@ -27,17 +27,15 @@ export class YouCanPay {
   }
 
   public async getPaymentUrl(data: TokenInput, lang: Lang): Promise<string> {
-    const payload = { ...data, pri_key: this.privateKey };
-    const axiosAdapter = new AxiosAdapter();
+    const token = await this.getToken(data);
 
-    const tokenEndpoint = new TokenEndpoint(
-      this.isSandBoxMode,
-      axiosAdapter,
-      payload
-    );
+    return this.getPaymentUrlFromToken(token, lang);
+  }
 
-    const token = await tokenEndpoint.call();
-
+  public async getPaymentUrlFromToken(
+    token: IToken,
+    lang: Lang
+  ): Promise<string> {
     return `${BASE_URL}${this.isSandBoxMode ? 'sandbox/' : ''}payment-form/${
       token.id
     }?lang=${lang}`;
